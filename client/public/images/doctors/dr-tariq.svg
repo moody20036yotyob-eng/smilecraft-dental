@@ -1,0 +1,53 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgTariq" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1828"/>
+      <stop offset="100%" style="stop-color:#1A3A5C"/>
+    </linearGradient>
+    <linearGradient id="skinTariq" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c4936a"/>
+      <stop offset="100%" style="stop-color:#a87850"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#bgTariq)"/>
+  <!-- Suit / formal coat -->
+  <rect x="40" y="140" width="120" height="74" rx="8" fill="#1a1a2e"/>
+  <!-- Tie -->
+  <path d="M100 140 L94 155 L100 185 L106 155z" fill="#C9A96E"/>
+  <!-- White shirt collar -->
+  <path d="M80 140 L100 155 L120 140 L116 140 L100 148 L84 140z" fill="#ffffff"/>
+  <!-- Neck -->
+  <rect x="80" y="116" width="40" height="34" rx="4" fill="url(#skinTariq)"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="84" rx="34" ry="40" fill="url(#skinTariq)"/>
+  <!-- Salt-and-pepper hair -->
+  <ellipse cx="100" cy="56" rx="34" ry="17" fill="#3a3040"/>
+  <rect x="66" y="58" width="68" height="12" fill="#3a3040"/>
+  <!-- Silver streaks -->
+  <path d="M80 56 Q82 62 80 68" stroke="#aaaaaa" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M93 54 Q95 60 93 66" stroke="#aaaaaa" stroke-width="2" fill="none" opacity="0.5"/>
+  <!-- Distinguished beard (salt & pepper) -->
+  <path d="M72 110 Q100 128 128 110 Q124 138 100 142 Q76 138 72 110z" fill="#3a3040"/>
+  <path d="M80 118 Q100 130 120 118" stroke="#aaaaaa" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <!-- Ears -->
+  <ellipse cx="66" cy="88" rx="5" ry="7" fill="#a87850"/>
+  <ellipse cx="134" cy="88" rx="5" ry="7" fill="#a87850"/>
+  <!-- Eyes -->
+  <ellipse cx="88" cy="82" rx="6" ry="5.5" fill="#ffffff"/>
+  <ellipse cx="112" cy="82" rx="6" ry="5.5" fill="#ffffff"/>
+  <circle cx="89" cy="82" r="3.5" fill="#1a0f05"/>
+  <circle cx="113" cy="82" r="3.5" fill="#1a0f05"/>
+  <circle cx="90" cy="81" r="1" fill="#ffffff"/>
+  <circle cx="114" cy="81" r="1" fill="#ffffff"/>
+  <!-- Eyebrows (distinguished, slightly grey) -->
+  <path d="M82 75 Q88 71 94 75" stroke="#3a3040" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M106 75 Q112 71 118 75" stroke="#3a3040" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Nose (prominent) -->
+  <path d="M96 91 Q100 99 104 91" stroke="#906040" stroke-width="1.5" fill="none"/>
+  <!-- Confident smile (subtle, beard covering) -->
+  <path d="M91 108 Q100 112 109 108" stroke="#906040" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Gold watch hint -->
+  <rect x="128" y="155" width="18" height="12" rx="3" fill="#C9A96E"/>
+  <circle cx="137" cy="161" r="4" fill="#1A3A5C"/>
+  <text x="137" y="163.5" text-anchor="middle" fill="#C9A96E" font-size="4">12</text>
+</svg>

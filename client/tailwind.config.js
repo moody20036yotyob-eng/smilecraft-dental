@@ -1,0 +1,87 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          50:  '#e8f4ff',
+          100: '#c8e4ff',
+          200: '#92c8ff',
+          300: '#5aaaff',
+          400: '#2d8eff',
+          500: '#0066CC',   // primary dental blue
+          600: '#0052a3',
+          700: '#003d7a',
+          800: '#002952',
+          900: '#001529',
+        },
+        teal: {
+          50:  '#e6fffe',
+          100: '#b3fffd',
+          200: '#66fffc',
+          300: '#1af5f0',
+          400: '#00ddd8',
+          500: '#00B5B0',   // dental mint/teal accent
+          600: '#008f8b',
+          700: '#006966',
+          800: '#004443',
+          900: '#002221',
+        },
+        slate: {
+          50:  '#f8fafc',
+          100: '#f1f5f9',
+          200: '#e2e8f0',
+          300: '#cbd5e1',
+          400: '#94a3b8',
+          500: '#64748b',
+          600: '#475569',
+          700: '#334155',
+          800: '#1e293b',
+          900: '#0f172a',
+          950: '#020617',
+        },
+        surface: '#ffffff',
+        bg: '#F0F6FF',
+      },
+      fontFamily: {
+        display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        body:    ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        arabic:  ['Tajawal', 'Arial', 'sans-serif'],
+      },
+      borderRadius: {
+        'card': '1.25rem',
+        '2xl': '1.5rem',
+        '3xl': '2rem',
+      },
+      boxShadow: {
+        'card':  '0 2px 20px rgba(0,102,204,0.08), 0 1px 4px rgba(0,0,0,0.04)',
+        'hover': '0 12px 40px rgba(0,102,204,0.18), 0 4px 12px rgba(0,0,0,0.06)',
+        'glow':  '0 0 30px rgba(0,181,176,0.35)',
+        'inner-blue': 'inset 0 0 0 1.5px rgba(0,102,204,0.15)',
+      },
+      keyframes: {
+        slideUp:    { '0%': { opacity:'0', transform:'translateY(30px)' }, '100%': { opacity:'1', transform:'translateY(0)' } },
+        slideLeft:  { '0%': { opacity:'0', transform:'translateX(30px)' }, '100%': { opacity:'1', transform:'translateX(0)' } },
+        fadeIn:     { '0%': { opacity:'0' }, '100%': { opacity:'1' } },
+        floatY:     { '0%,100%': { transform:'translateY(0)' }, '50%': { transform:'translateY(-12px)' } },
+        pulse2:     { '0%,100%': { opacity:'1' }, '50%': { opacity:'.6' } },
+        shimmerX:   { '0%': { backgroundPosition:'-200% center' }, '100%': { backgroundPosition:'200% center' } },
+        countUp:    { '0%': { opacity:'0', transform:'scale(0.8)' }, '100%': { opacity:'1', transform:'scale(1)' } },
+        ripple:     { '0%': { transform:'scale(0)', opacity:'1' }, '100%': { transform:'scale(4)', opacity:'0' } },
+        toothBounce:{ '0%,100%':{ transform:'translateY(0) rotate(-3deg)' }, '50%':{ transform:'translateY(-8px) rotate(3deg)' } },
+      },
+      animation: {
+        'slide-up':   'slideUp 0.6s cubic-bezier(.22,.68,0,1.2) forwards',
+        'slide-left': 'slideLeft 0.6s cubic-bezier(.22,.68,0,1.2) forwards',
+        'fade-in':    'fadeIn 0.5s ease forwards',
+        'float':      'floatY 4s ease-in-out infinite',
+        'pulse2':     'pulse2 2s ease-in-out infinite',
+        'shimmer':    'shimmerX 2.5s linear infinite',
+        'count-up':   'countUp 0.5s cubic-bezier(.22,.68,0,1.2) forwards',
+        'tooth':      'toothBounce 3s ease-in-out infinite',
+      },
+    },
+  },
+  plugins: [],
+}

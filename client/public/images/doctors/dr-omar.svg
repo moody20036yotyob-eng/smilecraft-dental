@@ -1,0 +1,51 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgOmar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c1e30"/>
+      <stop offset="100%" style="stop-color:#1A3A5C"/>
+    </linearGradient>
+    <linearGradient id="skinOmar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b8916c"/>
+      <stop offset="100%" style="stop-color:#9a7250"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#bgOmar)"/>
+  <!-- Scrubs / medical shirt -->
+  <rect x="44" y="142" width="112" height="72" rx="8" fill="#1A3A5C"/>
+  <rect x="86" y="142" width="28" height="60" fill="#C9A96E" opacity="0.3"/>
+  <!-- Neck -->
+  <rect x="78" y="118" width="44" height="36" rx="4" fill="url(#skinOmar)"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="86" rx="35" ry="40" fill="url(#skinOmar)"/>
+  <!-- Hair (very short/fade) -->
+  <ellipse cx="100" cy="58" rx="35" ry="16" fill="#0f0804"/>
+  <rect x="65" y="60" width="70" height="10" fill="#0f0804"/>
+  <!-- Light stubble -->
+  <ellipse cx="100" cy="112" rx="28" ry="10" fill="#1a0f08" opacity="0.4"/>
+  <!-- Ears -->
+  <ellipse cx="65" cy="89" rx="5" ry="7" fill="#9a7250"/>
+  <ellipse cx="135" cy="89" rx="5" ry="7" fill="#9a7250"/>
+  <!-- Eyes -->
+  <ellipse cx="88" cy="84" rx="6" ry="5" fill="#ffffff"/>
+  <ellipse cx="112" cy="84" rx="6" ry="5" fill="#ffffff"/>
+  <circle cx="89" cy="84" r="3.5" fill="#0f0804"/>
+  <circle cx="113" cy="84" r="3.5" fill="#0f0804"/>
+  <circle cx="90" cy="83" r="1" fill="#ffffff"/>
+  <circle cx="114" cy="83" r="1" fill="#ffffff"/>
+  <!-- Glasses -->
+  <rect x="80" y="79" width="16" height="12" rx="4" fill="none" stroke="#C9A96E" stroke-width="2"/>
+  <rect x="104" y="79" width="16" height="12" rx="4" fill="none" stroke="#C9A96E" stroke-width="2"/>
+  <line x1="96" y1="85" x2="104" y2="85" stroke="#C9A96E" stroke-width="2"/>
+  <line x1="80" y1="85" x2="75" y2="82" stroke="#C9A96E" stroke-width="1.5"/>
+  <line x1="120" y1="85" x2="125" y2="82" stroke="#C9A96E" stroke-width="1.5"/>
+  <!-- Eyebrows -->
+  <path d="M83 78 Q88 75 93 78" stroke="#0f0804" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M107 78 Q112 75 117 78" stroke="#0f0804" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Nose -->
+  <path d="M97 93 Q100 100 103 93" stroke="#8a6040" stroke-width="1.5" fill="none"/>
+  <!-- Smile (calm, professional) -->
+  <path d="M91 108 Q100 114 109 108" stroke="#8a6040" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Microscope icon on chest -->
+  <circle cx="148" cy="162" r="14" fill="#C9A96E"/>
+  <text x="148" y="166" text-anchor="middle" fill="#0A0A0F" font-size="9" font-weight="bold" font-family="Arial">🔬</text>
+</svg>

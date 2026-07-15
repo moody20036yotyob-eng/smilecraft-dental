@@ -1,0 +1,57 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgLina" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A3A5C"/>
+      <stop offset="100%" style="stop-color:#0d2540"/>
+    </linearGradient>
+    <linearGradient id="skinLina" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0cca8"/>
+      <stop offset="100%" style="stop-color:#e0b890"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#bgLina)"/>
+  <!-- Fun colorful coat -->
+  <rect x="42" y="144" width="116" height="70" rx="8" fill="#ffffff"/>
+  <rect x="83" y="144" width="34" height="62" fill="#C9A96E" opacity="0.6"/>
+  <!-- Small colorful pins on coat -->
+  <circle cx="72" cy="158" r="5" fill="#ff6b8a"/>
+  <circle cx="83" cy="168" r="4" fill="#6bceff"/>
+  <!-- Neck -->
+  <rect x="77" y="118" width="46" height="36" rx="5" fill="url(#skinLina)"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="87" rx="36" ry="42" fill="url(#skinLina)"/>
+  <!-- Hair (wavy, warm brown) -->
+  <ellipse cx="100" cy="58" rx="38" ry="22" fill="#7a3f18"/>
+  <path d="M62 65 Q54 90 58 120 Q62 100 68 82z" fill="#7a3f18"/>
+  <path d="M138 65 Q146 90 142 120 Q138 100 132 82z" fill="#7a3f18"/>
+  <!-- Hair waves -->
+  <path d="M58 90 Q62 95 58 102 Q54 109 58 116" stroke="#7a3f18" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <path d="M142 90 Q138 95 142 102 Q146 109 142 116" stroke="#7a3f18" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <!-- Ponytail hint -->
+  <path d="M137 75 Q150 65 148 85" stroke="#7a3f18" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <!-- Ears -->
+  <ellipse cx="64" cy="91" rx="6" ry="7.5" fill="#e0b890"/>
+  <ellipse cx="136" cy="91" rx="6" ry="7.5" fill="#e0b890"/>
+  <!-- Earrings -->
+  <circle cx="64" cy="100" r="3" fill="#C9A96E"/>
+  <!-- Eyes (bright, friendly) -->
+  <ellipse cx="87" cy="85" rx="7" ry="6" fill="#ffffff"/>
+  <ellipse cx="113" cy="85" rx="7" ry="6" fill="#ffffff"/>
+  <circle cx="88" cy="85" r="4" fill="#5a3010"/>
+  <circle cx="114" cy="85" r="4" fill="#5a3010"/>
+  <circle cx="89.5" cy="83.5" r="1.2" fill="#ffffff"/>
+  <circle cx="115.5" cy="83.5" r="1.2" fill="#ffffff"/>
+  <!-- Eyebrows (arched, expressive) -->
+  <path d="M80 77 Q87 72 94 76" stroke="#5a3010" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M106 76 Q113 72 120 77" stroke="#5a3010" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Nose -->
+  <path d="M97 93 Q100 99 103 93" stroke="#c09070" stroke-width="1.5" fill="none"/>
+  <!-- Big warm smile -->
+  <path d="M86 107 Q100 120 114 107" stroke="#c07060" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Cheek blush -->
+  <ellipse cx="78" cy="103" rx="9" ry="5" fill="#ff9090" opacity="0.25"/>
+  <ellipse cx="122" cy="103" rx="9" ry="5" fill="#ff9090" opacity="0.25"/>
+  <!-- Star badge -->
+  <circle cx="150" cy="155" r="15" fill="#C9A96E"/>
+  <text x="150" y="159" text-anchor="middle" fill="#0A0A0F" font-size="11">★</text>
+</svg>

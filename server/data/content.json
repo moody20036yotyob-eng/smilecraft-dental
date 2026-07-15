@@ -1,0 +1,179 @@
+{
+  "home": {
+    "heroTitleEn": "Crafting Smiles That Last a Lifetime",
+    "heroTitleAr": "نصنع ابتسامات تدوم مدى الحياة",
+    "heroSubtitleEn": "Where dental science meets artistic vision. Experience world-class care in an environment designed for your complete comfort and confidence.",
+    "heroSubtitleAr": "حيث يلتقي علم الأسنان بالرؤية الفنية. اختبر رعاية على مستوى عالمي في بيئة مصممة لراحتك الكاملة وثقتك.",
+    "heroCTAEn": "Book Your Consultation",
+    "heroCTAAr": "احجز استشارتك",
+    "trustBadge1En": "18+ Years of Excellence",
+    "trustBadge1Ar": "+18 عاماً من التميز",
+    "trustBadge2En": "10,000+ Smiles Transformed",
+    "trustBadge2Ar": "+10,000 ابتسامة محوّلة",
+    "trustBadge3En": "6 Specialist Doctors",
+    "trustBadge3Ar": "6 أطباء متخصصين",
+    "trustBadge4En": "International Accreditation",
+    "trustBadge4Ar": "اعتماد دولي",
+    "servicesHeadingEn": "Our Signature Services",
+    "servicesHeadingAr": "خدماتنا المميزة",
+    "servicesSubEn": "From subtle enhancements to complete transformations — every treatment is tailored to your unique vision.",
+    "servicesSubAr": "من التحسينات الخفية إلى التحولات الكاملة — كل علاج مصمم لرؤيتك الفريدة.",
+    "doctorsHeadingEn": "Meet Our Expert Team",
+    "doctorsHeadingAr": "تعرف على فريقنا الخبير",
+    "testimonialsHeadingEn": "What Our Patients Say",
+    "testimonialsHeadingAr": "ماذا يقول مرضانا",
+    "ctaHeadingEn": "Ready to Transform Your Smile?",
+    "ctaHeadingAr": "هل أنت مستعد لتحويل ابتسامتك؟",
+    "ctaSubEn": "Book a consultation today and take the first step toward the smile you've always deserved.",
+    "ctaSubAr": "احجز استشارة اليوم وخُذ الخطوة الأولى نحو الابتسامة التي تستحقها دائماً."
+  },
+  "about": {
+    "missionHeadingEn": "Our Mission",
+    "missionHeadingAr": "مهمتنا",
+    "missionTextEn": "At SmileCraft Dental, we believe that exceptional dental care is not merely a medical service — it is an art form, a science, and a deeply personal journey. Founded in 2006, we set out to create a sanctuary where cutting-edge technology meets heartfelt, human-centered care. Our mission is to deliver transformative results while ensuring every patient feels heard, respected, and at ease throughout their entire experience.",
+    "missionTextAr": "في سمايل كرافت للأسنان، نؤمن بأن الرعاية الاستثنائية للأسنان ليست مجرد خدمة طبية، بل هي فن وعلم ورحلة شخصية عميقة. تأسسنا عام 2006 بهدف خلق ملاذ تلتقي فيه التكنولوجيا المتطورة بالرعاية الإنسانية الحقيقية. مهمتنا تقديم نتائج تحويلية مع ضمان أن كل مريض يشعر بأنه مسموع ومحترم ومرتاح طوال تجربته.",
+    "visionEn": "To be the most trusted name in dental excellence across the region, setting the benchmark for clinical precision, aesthetic mastery, and compassionate patient care.",
+    "visionAr": "أن نكون الاسم الأكثر ثقة في التميز في طب الأسنان عبر المنطقة، ونضع معياراً للدقة السريرية والإتقان الجمالي والرعاية الرحيمة للمرضى.",
+    "timelineItems": [
+      { "year": "2006", "en": "SmileCraft Dental founded by Dr. Sarah Al-Rashidi with a vision to redefine dental luxury.", "ar": "تأسست سمايل كرافت على يد د. سارة الراشدي برؤية إعادة تعريف فخامة طب الأسنان." },
+      { "year": "2009", "en": "Opened our dedicated cosmetic suite and welcomed our 1,000th patient.", "ar": "افتتاح جناح التجميل المخصص واستقبال مريضنا الألف." },
+      { "year": "2012", "en": "Achieved JCI accreditation — the first dental clinic in the region to do so.", "ar": "حصلنا على اعتماد JCI — أول عيادة أسنان في المنطقة تحقق ذلك." },
+      { "year": "2015", "en": "Launched our in-house digital laboratory with same-week crown delivery.", "ar": "أطلقنا مختبرنا الرقمي الداخلي مع تسليم التيجان في نفس الأسبوع." },
+      { "year": "2018", "en": "Expanded to a full 12-chair facility with six specialist departments.", "ar": "توسعنا إلى منشأة كاملة من 12 كرسياً مع ستة أقسام متخصصة." },
+      { "year": "2022", "en": "Introduced AI-assisted treatment planning and 3D implant simulation.", "ar": "قدمنا تخطيط العلاج بمساعدة الذكاء الاصطناعي ومحاكاة الزراعة ثلاثية الأبعاد." },
+      { "year": "2024", "en": "Celebrated 10,000+ transformed smiles and opened our exclusive VIP Lounge.", "ar": "احتفلنا بأكثر من 10,000 ابتسامة محوّلة وافتتحنا صالة VIP الحصرية." }
+    ]
+  },
+  "contact": {
+    "addressEn": "Tower 5, Healthcare City Boulevard, Dubai, UAE",
+    "addressAr": "برج 5، شارع مدينة الرعاية الصحية، دبي، الإمارات",
+    "phone": "+971 4 123 4567",
+    "email": "hello@smilecraftdental.ae",
+    "hoursEn": "Mon–Thu: 9:00 AM – 8:00 PM | Fri: 9:00 AM – 6:00 PM | Sat: 10:00 AM – 5:00 PM | Sun: Closed",
+    "hoursAr": "الاثنين–الخميس: 9:00 ص – 8:00 م | الجمعة: 9:00 ص – 6:00 م | السبت: 10:00 ص – 5:00 م | الأحد: مغلق"
+  },
+  "testimonials": [
+    {
+      "nameEn": "Aisha Mahmoud",
+      "nameAr": "عائشة محمود",
+      "textEn": "Dr. Sarah transformed my smile in just two visits. I had been self-conscious about my teeth my entire adult life, and now I genuinely cannot stop smiling. The attention to detail, the artistry, the warm care — SmileCraft is unlike anything I have experienced before.",
+      "textAr": "حوّلت الدكتورة سارة ابتسامتي في زيارتين فقط. كنت أشعر بالحرج من أسناني طوال حياتي البالغة، والآن لا أستطيع حقاً التوقف عن الابتسام. الاهتمام بالتفاصيل والفن والرعاية الدافئة — سمايل كرافت لا مثيل لها.",
+      "rating": 5,
+      "service": "Porcelain Veneers"
+    },
+    {
+      "nameEn": "James Whitfield",
+      "nameAr": "جيمس ويتفيلد",
+      "textEn": "I flew in from London specifically for the All-on-4 treatment with Dr. Nour. Worth every mile. The whole team was exceptional, the aftercare instructions were crystal clear, and the results after healing are breathtaking. I wish I had done this ten years ago.",
+      "textAr": "سافرت من لندن خصيصاً لعلاج All-on-4 مع الدكتورة نور. يستحق كل ميل. كان الفريق بأكمله استثنائياً، وتعليمات الرعاية اللاحقة كانت واضحة تماماً، والنتائج بعد الشفاء مذهلة. أتمنى لو فعلت هذا منذ عشر سنوات.",
+      "rating": 5,
+      "service": "All-on-4 Implants"
+    },
+    {
+      "nameEn": "Fatima Al-Dosari",
+      "nameAr": "فاطمة الدوسري",
+      "textEn": "I had a severe dental phobia for 12 years. Dr. Omar's approach was so calm and methodical that I barely felt a thing during my root canal. He explained each step as he went, and the whole experience redefined what dental care means to me. I now book regular checkups without fear.",
+      "textAr": "كنت أعاني من رهاب شديد من الأسنان لمدة 12 عاماً. كان أسلوب الدكتور عمر هادئاً ومنهجياً جداً لدرجة أنني بالكاد شعرت بأي شيء خلال علاج قناة الجذر. شرح كل خطوة أثناء العمل، وأعادت التجربة بأكملها تعريف ما تعنيه رعاية الأسنان بالنسبة لي. أحجز الآن فحوصات منتظمة بدون خوف.",
+      "rating": 5,
+      "service": "Root Canal Treatment"
+    },
+    {
+      "nameEn": "Rania Serhan",
+      "nameAr": "رانيا سرحان",
+      "textEn": "My Invisalign journey with Dr. Khalid was a revelation. He mapped out the entire treatment digitally before we started, so I could see exactly where my smile was headed. His precision and attention to detail at every appointment made me feel completely in safe hands.",
+      "textAr": "كانت رحلتي مع إنفيزالين مع الدكتور خالد كاشفة. رسم خريطة العلاج بالكامل رقمياً قبل أن نبدأ حتى أتمكن من رؤية إلى أين تتجه ابتسامتي بالضبط. دقته واهتمامه بالتفاصيل في كل موعد جعلاني أشعر بالأمان الكامل.",
+      "rating": 5,
+      "service": "Invisalign"
+    },
+    {
+      "nameEn": "Khalifa Al-Mansoori",
+      "nameAr": "خليفة المنصوري",
+      "textEn": "The clinic itself is a work of art — the moment you walk in, you understand this is different from any dental experience you have had. Dr. Tariq's crown work on my front six teeth is flawless. Three of my colleagues have already booked appointments because of me.",
+      "textAr": "العيادة نفسها تحفة فنية — بمجرد أن تدخل، تدرك أن هذا مختلف عن أي تجربة أسنان مررت بها. عمل الدكتور طارق بالتيجان على أسناني الأمامية الستة لا تشوبه شائبة. ثلاثة من زملائي حجزوا مواعيد بالفعل بسببي.",
+      "rating": 5,
+      "service": "Dental Crowns"
+    },
+    {
+      "nameEn": "Sara Mitchell",
+      "nameAr": "سارة ميتشل",
+      "textEn": "Bringing my daughter here was the best decision I made. Dr. Lina was absolutely magical with her — turned what could have been a traumatic first dentist visit into something my daughter actually talks about as a positive experience. We will not go anywhere else.",
+      "textAr": "إحضار ابنتي إلى هنا كان أفضل قرار اتخذته. كانت الدكتورة لينا رائعة تماماً معها — حولت ما كان يمكن أن يكون زيارة طبيب أسنان أولى مؤلمة إلى شيء تتحدث عنه ابنتي كتجربة إيجابية. لن نذهب إلى أي مكان آخر.",
+      "rating": 5,
+      "service": "Pediatric Dentistry"
+    }
+  ],
+  "faq": [
+    {
+      "questionEn": "How do I know which treatment is right for me?",
+      "questionAr": "كيف أعرف أي علاج مناسب لي؟",
+      "answerEn": "Every patient's smile journey begins with a comprehensive consultation. During this 60-minute appointment, your doctor will conduct a full clinical examination, take digital X-rays and photographs, listen carefully to your goals, and present you with a personalized treatment plan tailored to your needs and budget. There is never any pressure to commit on the day.",
+      "answerAr": "تبدأ رحلة الابتسامة لكل مريض باستشارة شاملة. خلال هذا الموعد الذي يمتد لـ 60 دقيقة، سيُجري طبيبك فحصاً سريرياً كاملاً ويأخذ أشعة سينية رقمية وصوراً ويستمع بعناية لأهدافك ويقدم لك خطة علاج شخصية مصممة لاحتياجاتك وميزانيتك. لا يوجد أي ضغط للالتزام في نفس اليوم."
+    },
+    {
+      "questionEn": "Is teeth whitening safe?",
+      "questionAr": "هل تبييض الأسنان آمن؟",
+      "answerEn": "Absolutely. When performed by qualified dental professionals using clinically approved concentrations, teeth whitening is entirely safe. Our Zoom! laser whitening uses hydrogen peroxide gel at controlled concentrations with a special light to accelerate whitening while protecting your gum tissue. Mild sensitivity for 24–48 hours post-treatment is normal and resolves on its own.",
+      "answerAr": "بالتأكيد. عند إجرائه من قبل متخصصين أسنان مؤهلين باستخدام تركيزات معتمدة سريرياً، فإن تبييض الأسنان آمن تماماً. يستخدم تبييض الليزر Zoom! لدينا هلام بيروكسيد الهيدروجين بتركيزات محكومة مع ضوء خاص لتسريع التبييض مع حماية أنسجة اللثة. الحساسية الخفيفة لمدة 24-48 ساعة بعد العلاج طبيعية وتزول من تلقاء نفسها."
+    },
+    {
+      "questionEn": "How long do dental implants last?",
+      "questionAr": "كم تدوم زراعات الأسنان؟",
+      "answerEn": "With proper oral hygiene and regular professional maintenance, dental implants are designed to last a lifetime. The titanium implant post integrates with the jawbone through osseointegration and becomes a permanent part of your anatomy. The crown portion on top typically lasts 15–20 years before needing replacement due to normal wear. Our implants come with a 10-year structural guarantee.",
+      "answerAr": "مع نظافة الفم المناسبة والصيانة الاحترافية المنتظمة، صُممت زراعات الأسنان لتدوم مدى الحياة. يتكامل قضيب التيتانيوم مع عظم الفك من خلال الاندماج العظمي ويصبح جزءاً دائماً من تشريحك. جزء التاج في الأعلى يدوم عادةً 15-20 عاماً قبل أن يحتاج إلى استبدال بسبب البلى الطبيعي. تأتي زراعاتنا مع ضمان هيكلي لمدة 10 سنوات."
+    },
+    {
+      "questionEn": "Is Invisalign as effective as traditional braces?",
+      "questionAr": "هل إنفيزالين فعال مثل الأقواس التقليدية؟",
+      "answerEn": "For the vast majority of orthodontic cases — including moderate to complex crowding, spacing, and bite issues — Invisalign delivers outcomes equivalent to or better than traditional braces. Its advantages include removability, comfort, improved oral hygiene during treatment, and virtually invisible appearance. Your orthodontist will assess whether your specific case is best served by aligners or fixed appliances.",
+      "answerAr": "بالنسبة للغالبية العظمى من حالات تقويم الأسنان — بما في ذلك التكدس والتباعد ومشاكل الإطباق المتوسطة إلى المعقدة — يُحقق إنفيزالين نتائج مماثلة أو أفضل من الأقواس التقليدية. تشمل مزاياه قابلية الإزالة والراحة وتحسين نظافة الفم أثناء العلاج والمظهر غير المرئي تقريباً. سيُقيّم طبيب تقويم الأسنان ما إذا كانت حالتك بشكل خاص يخدمها المحاذيات أو الأجهزة الثابتة بشكل أفضل."
+    },
+    {
+      "questionEn": "Do you offer payment plans or financing?",
+      "questionAr": "هل تقدمون خطط دفع أو تمويلاً؟",
+      "answerEn": "Yes. We understand that premium dental care is an investment, and we want it to be accessible. We offer 0% interest installment plans for 3, 6, and 12 months through our banking partners. We also accept all major insurance networks and can provide pre-authorization letters. Our treatment coordinators are happy to discuss the best financial arrangement for your specific treatment plan.",
+      "answerAr": "نعم. ندرك أن الرعاية الاستثنائية للأسنان استثمار ونريده أن يكون متاحاً. نقدم خطط تقسيط بفائدة 0٪ لمدة 3 و6 و12 شهراً من خلال شركائنا المصرفيين. نقبل أيضاً جميع شبكات التأمين الكبرى ويمكننا تقديم خطابات الترخيص المسبق. يسعد منسقو العلاج لدينا مناقشة أفضل ترتيب مالي لخطة علاجك المحددة."
+    },
+    {
+      "questionEn": "How do I manage dental anxiety?",
+      "questionAr": "كيف أتعامل مع قلق الأسنان؟",
+      "answerEn": "Dental anxiety is extremely common, and we have dedicated protocols to ensure every anxious patient feels completely at ease. Options include: oral sedation (taken before your appointment), inhalation sedation with nitrous oxide (laughing gas), IV conscious sedation for significant anxiety, and our CALM technique combining mindfulness cues with gentle, narrated treatment. Tell us about your anxiety at booking — we will tailor everything to you.",
+      "answerAr": "قلق الأسنان شائع جداً ولدينا بروتوكولات مخصصة لضمان أن كل مريض قلق يشعر بالارتياح الكامل. تشمل الخيارات: التخدير الفموي (يؤخذ قبل موعدك)، التخدير بالاستنشاق بأكسيد النيتروز (غاز الضحك)، التخدير الوريدي الواعي للقلق الشديد، وتقنية CALM الخاصة بنا التي تجمع إشارات اليقظة الذهنية مع العلاج اللطيف والمشروح. أخبرنا عن قلقك عند الحجز وسنصمم كل شيء لك."
+    },
+    {
+      "questionEn": "What should I expect at my first visit?",
+      "questionAr": "ماذا أتوقع في زيارتي الأولى؟",
+      "answerEn": "Your first visit is all about discovery and comfort. You will be welcomed by our patient experience team, offered refreshments in our lounge, and given a clinic tour if you wish. Your consultation includes a full health history review, clinical examination, digital X-rays, and intraoral photographs. There is no obligation to begin treatment — this appointment is purely to understand your needs and goals.",
+      "answerAr": "زيارتك الأولى تدور بالكامل حول الاكتشاف والراحة. سيرحب بك فريق تجربة المرضى لدينا ويُقدم لك المرطبات في صالتنا ويمنحك جولة في العيادة إذا رغبت. تشمل استشارتك مراجعة كاملة لتاريخك الصحي وفحصاً سريرياً وأشعة سينية رقمية وصوراً داخل الفم. لا يوجد التزام ببدء العلاج — هذا الموعد هو فقط لفهم احتياجاتك وأهدافك."
+    },
+    {
+      "questionEn": "Are your sterilization and hygiene standards the highest?",
+      "questionAr": "هل معايير التعقيم والنظافة لديكم هي الأعلى؟",
+      "answerEn": "Our sterilization protocols exceed international JCI and ISO standards. Every instrument undergoes Class B autoclave sterilization with biological monitoring. All surfaces are disinfected with medical-grade solutions between each patient. Our treatment rooms undergo HEPA air filtration, and we use barrier protection throughout. Our infection control officer conducts monthly audits to maintain our 100% compliance record.",
+      "answerAr": "تتجاوز بروتوكولات التعقيم لدينا معايير JCI وISO الدولية. تخضع كل أداة للتعقيم بالأوتوكلاف من الفئة B مع المراقبة البيولوجية. يتم تطهير جميع الأسطح بمحاليل طبية الدرجة بين كل مريض. تخضع غرف العلاج لدينا لتصفية هواء HEPA ونستخدم الحماية الحاجزة طوال الوقت. يُجري مسؤول مكافحة العدوى لدينا عمليات تدقيق شهرية للحفاظ على سجل امتثال 100٪."
+    },
+    {
+      "questionEn": "How long does a smile makeover take?",
+      "questionAr": "كم يستغرق تحويل الابتسامة؟",
+      "answerEn": "The timeline depends on which procedures are included in your makeover. A whitening-only transformation can be completed in one day. A full veneer set typically requires 2–3 visits over two to three weeks. A comprehensive makeover combining orthodontics, implants, and cosmetic procedures may take 12–18 months. Your doctor will map out a precise timeline at your consultation.",
+      "answerAr": "يعتمد الجدول الزمني على الإجراءات المدرجة في تحولك. يمكن إكمال تحول التبييض فقط في يوم واحد. تتطلب مجموعة القشور الكاملة عادةً 2-3 زيارات على مدى أسبوعين إلى ثلاثة أسابيع. قد يستغرق التحول الشامل الذي يجمع تقويم الأسنان والزراعات والإجراءات التجميلية 12-18 شهراً. سيرسم طبيبك جدولاً زمنياً دقيقاً في استشارتك."
+    },
+    {
+      "questionEn": "Do you treat children?",
+      "questionAr": "هل تعالجون الأطفال؟",
+      "answerEn": "Yes! Dr. Lina Haddad, our pediatric specialist, sees children from age 1 for first tooth emergence guidance. We recommend a first dental visit by age 2, with six-monthly checkups thereafter. Our pediatric suite is specifically designed to be a welcoming, fear-free space with child-sized equipment, interactive screens, and a reward system that makes kids excited about their next visit.",
+      "answerAr": "نعم! الدكتورة لينا حداد، أخصائية الأطفال لدينا، ترى الأطفال من سن 1 للتوجيه بشأن ظهور السن الأول. نوصي بالزيارة الأولى لطبيب الأسنان بحلول سن 2 مع فحوصات كل ستة أشهر بعد ذلك. صُمم جناح الأطفال لدينا تحديداً ليكون مساحة ترحيبية خالية من الخوف بمعدات بحجم الأطفال وشاشات تفاعلية ونظام مكافآت يجعل الأطفال متحمسين لزيارتهم القادمة."
+    },
+    {
+      "questionEn": "What insurances do you accept?",
+      "questionAr": "ما هي شركات التأمين التي تقبلونها؟",
+      "answerEn": "We are a preferred provider for all major insurance networks in the UAE including Daman, AXA Gulf, Bupa Arabia, MetLife, Cigna, Allianz Care, and Oman Insurance Company. We also accept international travel insurance and medical cards. Our insurance coordinator will verify your coverage before your appointment and provide you with a clear breakdown of your expected out-of-pocket costs.",
+      "answerAr": "نحن مزود مفضل لجميع شبكات التأمين الكبرى في الإمارات بما في ذلك ضمان وAXA الخليج وبوبا العربية وMetLife وCigna وAllianz Care وشركة عمان للتأمين. نقبل أيضاً تأمين السفر الدولي والبطاقات الطبية. سيتحقق منسق التأمين لدينا من تغطيتك قبل موعدك ويزودك بتفصيل واضح لتكاليفك المتوقعة المدفوعة من الجيب."
+    },
+    {
+      "questionEn": "Can I get same-day emergency care?",
+      "questionAr": "هل يمكنني الحصول على رعاية طارئة في نفس اليوم؟",
+      "answerEn": "Absolutely. We reserve emergency slots every day for patients experiencing dental pain, broken teeth, lost restorations, or other urgent concerns. Call our emergency line at +971 4 123 4599 and we will accommodate you as quickly as possible — typically within two hours during clinic hours. For after-hours emergencies, our on-call dentist is available via phone to advise on pain management until we can see you.",
+      "answerAr": "بالتأكيد. نحجز مواعيد طوارئ كل يوم للمرضى الذين يعانون من آلام الأسنان أو الأسنان المكسورة أو فقدان الترميمات أو غيرها من المخاوف العاجلة. اتصل بخط الطوارئ لدينا على +971 4 123 4599 وسنستوعبك في أقرب وقت ممكن — عادةً في غضون ساعتين خلال ساعات العيادة. لحالات الطوارئ بعد ساعات العمل، يتوفر طبيب الأسنان المناوب عبر الهاتف للإرشاد حول إدارة الألم حتى نتمكن من رؤيتك."
+    }
+  ]
+}

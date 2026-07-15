@@ -1,0 +1,50 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgSarah" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1A3A5C"/>
+      <stop offset="100%" style="stop-color:#0e2440"/>
+    </linearGradient>
+    <linearGradient id="skinSarah" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8c4a0"/>
+      <stop offset="100%" style="stop-color:#d4a87a"/>
+    </linearGradient>
+    <clipPath id="circleSarah">
+      <circle cx="100" cy="100" r="100"/>
+    </clipPath>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#bgSarah)"/>
+  <!-- Coat -->
+  <rect x="45" y="145" width="110" height="70" rx="8" fill="#ffffff"/>
+  <rect x="85" y="145" width="30" height="60" fill="#C9A96E"/>
+  <!-- Body / neck -->
+  <rect x="72" y="118" width="56" height="40" rx="4" fill="url(#skinSarah)"/>
+  <!-- Head -->
+  <ellipse cx="100" cy="90" rx="36" ry="42" fill="url(#skinSarah)"/>
+  <!-- Hair -->
+  <ellipse cx="100" cy="62" rx="36" ry="22" fill="#3d2314"/>
+  <path d="M64 70 Q58 100 65 120 Q68 90 72 80z" fill="#3d2314"/>
+  <path d="M136 70 Q142 100 135 120 Q132 90 128 80z" fill="#3d2314"/>
+  <!-- Ears -->
+  <ellipse cx="64" cy="93" rx="6" ry="8" fill="#d4a87a"/>
+  <ellipse cx="136" cy="93" rx="6" ry="8" fill="#d4a87a"/>
+  <!-- Eyes -->
+  <ellipse cx="87" cy="87" rx="6" ry="5" fill="#ffffff"/>
+  <ellipse cx="113" cy="87" rx="6" ry="5" fill="#ffffff"/>
+  <circle cx="88" cy="87" r="3.5" fill="#3d2314"/>
+  <circle cx="114" cy="87" r="3.5" fill="#3d2314"/>
+  <circle cx="89" cy="86" r="1" fill="#ffffff"/>
+  <circle cx="115" cy="86" r="1" fill="#ffffff"/>
+  <!-- Eyebrows -->
+  <path d="M81 81 Q87 78 93 81" stroke="#3d2314" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <path d="M107 81 Q113 78 119 81" stroke="#3d2314" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Nose -->
+  <path d="M98 93 Q100 100 102 93" stroke="#c0906a" stroke-width="1.5" fill="none"/>
+  <!-- Smile -->
+  <path d="M90 108 Q100 116 110 108" stroke="#c0906a" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Stethoscope -->
+  <path d="M85 148 Q82 160 80 165 Q78 170 83 172 Q88 174 90 168" stroke="#1A3A5C" stroke-width="3" fill="none"/>
+  <circle cx="90" cy="168" r="5" fill="#C9A96E" stroke="#1A3A5C" stroke-width="1"/>
+  <!-- Gold badge -->
+  <circle cx="155" cy="155" r="16" fill="#C9A96E"/>
+  <text x="155" y="159" text-anchor="middle" fill="#0A0A0F" font-size="10" font-weight="bold" font-family="Arial">DR</text>
+</svg>
