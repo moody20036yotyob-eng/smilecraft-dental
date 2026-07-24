@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
 import { useLang } from '../context/LanguageContext'
 import { useContent } from '../context/ContentContext'
 
@@ -25,22 +24,12 @@ const GRADIENTS = {
   'Pediatric Dentistry':  'from-green-500 to-teal-400',
 }
 
-function ServiceCard({ svc, pick, index }) {
-  const [hovered, setHovered] = useState(false)
+function ServiceCard({ svc, pick }) {
   const gradient = GRADIENTS[svc.category] || 'from-brand-500 to-teal-400'
-  const icon     = ICONS[svc.category]  || '◆'
+  const icon     = ICONS[svc.category] || '◆'
 
   return (
-    <motion.div
-      className="relative bg-white rounded-2xl border border-slate-100 overflow-hidden"
-      initial={{ opacity: 0, y: 32 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, scale: 0.95 }}
-      transition={{ duration: 0.4, delay: index * 0.05 }}
-      onHoverStart={() => setHovered(true)}
-      onHoverEnd={() => setHovered(false)}
-      whileHover={{ y: -6, boxShadow: '0 20px 50px rgba(0,102,204,0.15)' }}
-    >
+    <div className="group relative bg-white rounded-2xl border border-slate-100 overflow-hidden hover:-translate-y-1.5 hover:shadow-hover transition-all duration-200">
       <div className={`h-1.5 w-full bg-gradient-to-r ${gradient}`} />
       <div className="p-6">
         <div className={`w-11 h-11 rounded-xl bg-gradient-to-br ${gradient} flex items-center justify-center text-white text-xl mb-4 shadow-md`}>
@@ -60,22 +49,18 @@ function ServiceCard({ svc, pick, index }) {
           <span className="text-slate-400 text-xs flex items-center gap-1">⏱ {pick({ en: svc.duration, ar: svc.durationAr })}</span>
         </div>
       </div>
-      <AnimatePresence>
-        {hovered && (
-          <motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} exit={{ opacity:0 }} transition={{ duration:0.2 }}
-            className={`absolute inset-0 bg-gradient-to-br ${gradient} flex flex-col items-center justify-center gap-4 p-6 cursor-pointer`}>
-            <span className="text-white text-4xl">{icon}</span>
-            <h3 className="font-bold text-white text-xl text-center">{pick({ en: svc.nameEn, ar: svc.nameAr })}</h3>
-            <p className="text-white/80 text-sm text-center leading-relaxed line-clamp-4">
-              {pick({ en: svc.descriptionEn, ar: svc.descriptionAr })}
-            </p>
-            <Link to="/booking" className="mt-2 px-6 py-2.5 bg-white text-brand-600 font-bold rounded-xl text-sm hover:bg-slate-50 transition-colors shadow-lg">
-              {pick({ en: 'Book This →', ar: '← احجز' })}
-            </Link>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </motion.div>
+      {/* Hover overlay — pure CSS */}
+      <div className={`absolute inset-0 bg-gradient-to-br ${gradient} flex flex-col items-center justify-center gap-4 p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none group-hover:pointer-events-auto`}>
+        <span className="text-white text-4xl">{icon}</span>
+        <h3 className="font-bold text-white text-xl text-center">{pick({ en: svc.nameEn, ar: svc.nameAr })}</h3>
+        <p className="text-white/80 text-sm text-center leading-relaxed line-clamp-4">
+          {pick({ en: svc.descriptionEn, ar: svc.descriptionAr })}
+        </p>
+        <Link to="/booking" className="mt-2 px-6 py-2.5 bg-white text-brand-600 font-bold rounded-xl text-sm hover:bg-slate-50 transition-colors shadow-lg">
+          {pick({ en: 'Book This →', ar: '← احجز' })}
+        </Link>
+      </div>
+    </div>
   )
 }
 
@@ -89,7 +74,6 @@ export default function Services() {
 
   return (
     <div className="min-h-screen bg-white pt-24 pb-20">
-      {/* Hero */}
       <section className="bg-gradient-to-b from-slate-50 to-white py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <span className="section-tag">🦷 {pick({ en: 'Our Treatments', ar: 'علاجاتنا' })}</span>
@@ -100,7 +84,6 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Filter tabs */}
       <div className="sticky top-16 z-30 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-3 flex gap-2 overflow-x-auto scrollbar-none">
           {cats.map(cat => (
@@ -116,19 +99,15 @@ export default function Services() {
         </div>
       </div>
 
-      {/* Grid */}
       <div className="max-w-7xl mx-auto px-6 py-12">
         <p className="text-slate-400 text-sm mb-6">
           {filtered.length} {pick({ en: 'treatments available', ar: 'علاجات متاحة' })}
         </p>
-        <motion.div layout className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-          <AnimatePresence mode="popLayout">
-            {filtered.map((svc, i) => <ServiceCard key={svc.id} svc={svc} pick={pick} index={i} />)}
-          </AnimatePresence>
-        </motion.div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+          {filtered.map((svc) => <ServiceCard key={svc.id} svc={svc} pick={pick} />)}
+        </div>
       </div>
 
-      {/* CTA banner */}
       <div className="max-w-7xl mx-auto px-6">
         <div className="bg-white rounded-3xl border-2 border-brand-100 p-10 text-center shadow-card">
           <h2 className="text-2xl font-bold text-slate-800 mb-3">

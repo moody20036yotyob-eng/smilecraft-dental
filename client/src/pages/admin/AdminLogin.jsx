@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { motion } from 'framer-motion'
 import { apiLogin } from '../../hooks/useApi'
 
 export default function AdminLogin() {
@@ -25,7 +24,7 @@ export default function AdminLogin() {
 
   return (
     <div className="min-h-screen bg-slate-50 flex items-center justify-center px-6">
-      <motion.div initial={{ opacity:0, y:20 }} animate={{ opacity:1, y:0 }} className="w-full max-w-sm">
+      <div className="w-full max-w-sm animate-fade-up">
         <div className="text-center mb-8">
           <div className="w-14 h-14 rounded-2xl bg-brand-500 flex items-center justify-center mx-auto mb-4 shadow-lg">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
@@ -58,7 +57,7 @@ export default function AdminLogin() {
         <p className="text-center mt-6 text-slate-400 text-xs">
           <a href="/" className="hover:text-brand-500 transition-colors">← Back to website</a>
         </p>
-      </motion.div>
+      </div>
     </div>
   )
 }

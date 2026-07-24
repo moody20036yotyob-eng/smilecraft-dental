@@ -1,34 +1,20 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
 import { useLang } from '../context/LanguageContext'
 import { useContent } from '../context/ContentContext'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 
-function DoctorCard({ doc, pick, index }) {
-  const [hovered, setHovered] = useState(false)
+function DoctorCard({ doc, pick }) {
   return (
-    <motion.div
-      className="bg-white rounded-2xl border border-slate-100 overflow-hidden"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.45, delay: index * 0.08 }}
-      onHoverStart={() => setHovered(true)}
-      onHoverEnd={() => setHovered(false)}
-      whileHover={{ y: -5, boxShadow: '0 16px 40px rgba(0,102,204,0.14)' }}
-    >
+    <div className="group bg-white rounded-2xl border border-slate-100 overflow-hidden hover:-translate-y-1.5 hover:shadow-hover transition-all duration-200">
       <div className="relative aspect-square bg-gradient-to-br from-brand-50 to-teal-50 overflow-hidden">
         <img src={doc.photo} alt={doc.nameEn || ''}
-          className={`w-full h-full object-cover transition-transform duration-500 ${hovered ? 'scale-105' : 'scale-100'}`}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           onError={e => { e.target.style.display='none' }}/>
-        {hovered && (
-          <motion.div initial={{ opacity:0 }} animate={{ opacity:1 }}
-            className="absolute inset-0 bg-white/90 backdrop-blur-sm p-5 flex flex-col justify-end">
-            <p className="text-slate-600 text-xs leading-relaxed line-clamp-6">
-              {pick({ en: doc.bioEn, ar: doc.bioAr })}
-            </p>
-          </motion.div>
-        )}
+        <div className="absolute inset-0 bg-white/90 backdrop-blur-sm p-5 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+          <p className="text-slate-600 text-xs leading-relaxed line-clamp-6">
+            {pick({ en: doc.bioEn, ar: doc.bioAr })}
+          </p>
+        </div>
         <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-2.5 py-1 rounded-full text-xs font-bold text-brand-600 shadow-sm">
           {doc.yearsExp}yr
         </div>
@@ -44,13 +30,14 @@ function DoctorCard({ doc, pick, index }) {
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
   )
 }
 
 export default function About() {
   const { pick } = useLang()
   const { content, doctors } = useContent()
+  const ref = useScrollReveal()
   const ab = content?.about || {}
 
   const timeline = [
@@ -63,8 +50,7 @@ export default function About() {
   ]
 
   return (
-    <div className="min-h-screen bg-white pt-24 pb-20">
-      {/* Hero */}
+    <div ref={ref} className="min-h-screen bg-white pt-24 pb-20">
       <section className="bg-gradient-to-b from-slate-50 to-white py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <span className="section-tag">🏥 {pick({ en: 'About Us', ar: 'من نحن' })}</span>
@@ -73,7 +59,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Stats row */}
       <section className="py-12 bg-white">
         <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
@@ -82,18 +67,15 @@ export default function About() {
             { num:'98.7%', label:{ en:'Success Rate', ar:'معدل النجاح' }, icon:'✅' },
             { num:'6', label:{ en:'Specialists', ar:'متخصصون' }, icon:'👨‍⚕️' },
           ].map((s, i) => (
-            <motion.div key={s.num}
-              initial={{ opacity:0, y:20 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ delay:i*0.1 }}
-              className="stat-pill">
+            <div key={s.num} className="stat-pill reveal" style={{ transitionDelay: `${i * 80}ms` }}>
               <span className="text-2xl mb-1">{s.icon}</span>
               <span className="text-2xl font-extrabold text-brand-600">{s.num}</span>
               <span className="text-slate-500 text-xs text-center">{pick(s.label)}</span>
-            </motion.div>
+            </div>
           ))}
         </div>
       </section>
 
-      {/* Values */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
@@ -109,19 +91,18 @@ export default function About() {
               { icon:'🏅', en:'Accredited Excellence', ar:'التميز المعتمد', sub:{ en:'JCI-certified standards of care', ar:'معايير رعاية معتمدة JCI' } },
               { icon:'♻️', en:'Sustainability', ar:'الاستدامة', sub:{ en:'Eco-conscious clinic operations', ar:'عمليات عيادة صديقة للبيئة' } },
             ].map((v, i) => (
-              <motion.div key={v.en}
-                className="bg-white rounded-2xl border border-slate-100 p-6 hover:shadow-hover hover:-translate-y-1 transition-all duration-250"
-                initial={{ opacity:0, y:24 }} whileInView={{ opacity:1, y:0 }} viewport={{ once:true }} transition={{ delay:i*0.07 }}>
+              <div key={v.en}
+                className="reveal bg-white rounded-2xl border border-slate-100 p-6 hover:shadow-hover hover:-translate-y-1 transition-all duration-200"
+                style={{ transitionDelay: `${i * 60}ms` }}>
                 <span className="text-3xl mb-4 block">{v.icon}</span>
                 <h3 className="font-bold text-slate-800 mb-1">{pick(v)}</h3>
                 <p className="text-slate-400 text-sm">{pick(v.sub)}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Timeline */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-12">
@@ -132,9 +113,9 @@ export default function About() {
             <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-brand-200 to-teal-200" />
             <div className="space-y-6">
               {timeline.map((t, i) => (
-                <motion.div key={t.year}
-                  initial={{ opacity:0, x:-30 }} whileInView={{ opacity:1, x:0 }} viewport={{ once:true }} transition={{ delay:i*0.1 }}
-                  className="relative flex gap-8 items-start ps-14">
+                <div key={t.year}
+                  className="reveal relative flex gap-8 items-start ps-14"
+                  style={{ transitionDelay: `${i * 80}ms` }}>
                   <div className="absolute left-0 w-12 h-12 rounded-full bg-brand-500 text-white flex items-center justify-center font-bold text-xs shadow-md">
                     {t.year.slice(2)}
                   </div>
@@ -142,14 +123,13 @@ export default function About() {
                     <span className="text-brand-500 font-bold text-sm">{t.year}</span>
                     <p className="text-slate-700 text-sm mt-1">{pick(t)}</p>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Doctors */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
@@ -158,12 +138,11 @@ export default function About() {
             <p className="text-slate-400 text-sm mt-2">{pick({ en: 'Hover any card to read their bio', ar: 'مرر فوق أي بطاقة لقراءة السيرة الذاتية' })}</p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
-            {(doctors || []).map((doc, i) => <DoctorCard key={doc.id} doc={doc} pick={pick} index={i} />)}
+            {(doctors || []).map((doc) => <DoctorCard key={doc.id} doc={doc} pick={pick} />)}
           </div>
         </div>
       </section>
 
-      {/* CTA */}
       <div className="max-w-7xl mx-auto px-6">
         <div className="bg-white rounded-3xl border-2 border-brand-100 p-10 text-center shadow-card">
           <h2 className="text-2xl font-bold text-slate-800 mb-3">{pick({ en: 'Ready to meet your dentist?', ar: 'هل أنت مستعد لمقابلة طبيبك؟' })}</h2>

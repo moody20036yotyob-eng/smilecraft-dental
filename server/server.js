@@ -4,6 +4,7 @@ const cors = require('cors')
 const helmet = require('helmet')
 const rateLimit = require('express-rate-limit')
 const hpp = require('hpp')
+const compression = require('compression')
 const path = require('path')
 
 const authRouter    = require('./routes/auth')
@@ -15,6 +16,9 @@ const app = express()
 const isProd = process.env.NODE_ENV === 'production'
 
 app.set('trust proxy', 1)
+
+// Gzip compress all responses
+app.use(compression())
 
 // Security headers
 app.use(helmet({

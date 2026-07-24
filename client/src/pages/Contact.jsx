@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { useLang } from '../context/LanguageContext'
 import { useContent } from '../context/ContentContext'
-import { motion } from 'framer-motion'
+import { useScrollReveal } from '../hooks/useScrollReveal'
 
 export default function Contact() {
   const { pick } = useLang()
   const { content } = useContent()
+  const ref = useScrollReveal()
   const ci = content?.contact || {}
   const [form, setForm] = useState({ name:'', email:'', phone:'', subject:'', message:'' })
   const [sent, setSent] = useState(false)
@@ -29,23 +30,21 @@ export default function Contact() {
   ]
 
   return (
-    <div className="min-h-screen bg-white pt-24 pb-20">
-      {/* Hero */}
+    <div ref={ref} className="min-h-screen bg-white pt-24 pb-20">
       <section className="bg-gradient-to-b from-slate-50 to-white py-16">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <span className="section-tag">📬 {pick({ en: 'Contact Us', ar: 'تواصل معنا' })}</span>
-          <h1 className="section-heading mt-2 mb-4">{pick({ en: 'We\'re Here For You', ar: 'نحن هنا من أجلك' })}</h1>
+          <h1 className="section-heading mt-2 mb-4">{pick({ en: "We're Here For You", ar: 'نحن هنا من أجلك' })}</h1>
           <p className="section-sub mx-auto text-center">{pick({ en: 'Reach out with any questions, or book directly below.', ar: 'تواصل معنا بأي استفسار، أو احجز مباشرة أدناه.' })}</p>
         </div>
       </section>
 
       <div className="max-w-7xl mx-auto px-6 py-12 grid lg:grid-cols-2 gap-10">
-        {/* Info cards */}
         <div className="space-y-4">
           {info.map((item, i) => (
-            <motion.div key={i}
-              initial={{ opacity:0, x:-24 }} whileInView={{ opacity:1, x:0 }} viewport={{ once:true }} transition={{ delay:i*0.08 }}
-              className="bg-white rounded-2xl border border-slate-100 p-5 flex gap-4 items-start hover:shadow-card hover:border-brand-100 transition-all duration-200">
+            <div key={i}
+              className="reveal bg-white rounded-2xl border border-slate-100 p-5 flex gap-4 items-start hover:shadow-card hover:border-brand-100 transition-all duration-200"
+              style={{ transitionDelay: `${i * 70}ms` }}>
               <div className="w-11 h-11 rounded-xl bg-brand-50 flex items-center justify-center text-xl flex-shrink-0">{item.icon}</div>
               <div>
                 <p className="text-xs font-bold text-slate-400 uppercase tracking-wide mb-0.5">{pick(item.label)}</p>
@@ -53,39 +52,32 @@ export default function Contact() {
                   ? <a href={item.href} className="text-slate-700 text-sm font-medium hover:text-brand-500 transition-colors">{pick(item.val)}</a>
                   : <p className="text-slate-700 text-sm font-medium">{pick(item.val)}</p>}
               </div>
-            </motion.div>
+            </div>
           ))}
 
-          {/* Emergency */}
-          <motion.div initial={{ opacity:0, x:-24 }} whileInView={{ opacity:1, x:0 }} viewport={{ once:true }} transition={{ delay:0.4 }}
-            className="bg-red-50 rounded-2xl border border-red-100 p-5 flex gap-4 items-center">
+          <div className="reveal bg-red-50 rounded-2xl border border-red-100 p-5 flex gap-4 items-center" style={{ transitionDelay: '280ms' }}>
             <div className="w-11 h-11 rounded-xl bg-red-100 flex items-center justify-center text-xl flex-shrink-0">🚨</div>
             <div>
               <p className="text-red-600 font-bold text-sm">{pick({ en: 'Dental Emergency', ar: 'طوارئ الأسنان' })}</p>
               <a href="tel:+97141234599" className="text-red-500 text-sm font-medium hover:underline">+971 4 123 4599</a>
               <p className="text-red-400 text-xs mt-0.5">{pick({ en: '24/7 Emergency Line', ar: 'خط طوارئ 24/7' })}</p>
             </div>
-          </motion.div>
+          </div>
 
-          {/* Map placeholder */}
-          <motion.div initial={{ opacity:0 }} whileInView={{ opacity:1 }} viewport={{ once:true }}
-            className="rounded-2xl overflow-hidden border border-slate-100 h-48 bg-gradient-to-br from-brand-50 to-teal-50 flex items-center justify-center">
+          <div className="reveal rounded-2xl overflow-hidden border border-slate-100 h-48 bg-gradient-to-br from-brand-50 to-teal-50 flex items-center justify-center" style={{ transitionDelay: '350ms' }}>
             <div className="text-center">
               <span className="text-3xl block mb-2">🗺️</span>
               <p className="text-brand-600 font-semibold text-sm">{pick({ en: 'Healthcare City, Dubai', ar: 'مدينة الرعاية الصحية، دبي' })}</p>
             </div>
-          </motion.div>
+          </div>
         </div>
 
-        {/* Contact form */}
-        <motion.div initial={{ opacity:0, x:24 }} whileInView={{ opacity:1, x:0 }} viewport={{ once:true }}
-          className="bg-white rounded-2xl border border-slate-100 p-8 shadow-card">
+        <div className="reveal bg-white rounded-2xl border border-slate-100 p-8 shadow-card" style={{ transitionDelay: '100ms' }}>
           {sent ? (
             <div className="flex flex-col items-center justify-center h-full py-12 text-center">
-              <motion.div initial={{ scale:0 }} animate={{ scale:1 }} transition={{ type:'spring', stiffness:300 }}
-                className="w-20 h-20 rounded-full bg-teal-100 flex items-center justify-center text-4xl mb-6">✓</motion.div>
+              <div className="w-20 h-20 rounded-full bg-teal-100 flex items-center justify-center text-4xl mb-6 animate-fade-in-scale">✓</div>
               <h3 className="text-xl font-bold text-slate-800 mb-2">{pick({ en: 'Message Sent!', ar: 'تم الإرسال!' })}</h3>
-              <p className="text-slate-400 text-sm">{pick({ en: 'We\'ll get back to you within 2 hours.', ar: 'سنرد عليك خلال ساعتين.' })}</p>
+              <p className="text-slate-400 text-sm">{pick({ en: "We'll get back to you within 2 hours.", ar: 'سنرد عليك خلال ساعتين.' })}</p>
             </div>
           ) : (
             <>
@@ -93,10 +85,10 @@ export default function Contact() {
               <form onSubmit={submit} className="space-y-4">
                 <div className="grid sm:grid-cols-2 gap-4">
                   {[
-                    { k:'name',  label:{ en:'Full Name', ar:'الاسم الكامل' }, type:'text', req:true },
-                    { k:'email', label:{ en:'Email', ar:'البريد الإلكتروني' }, type:'email', req:true },
-                    { k:'phone', label:{ en:'Phone', ar:'الهاتف' }, type:'tel' },
-                    { k:'subject', label:{ en:'Subject', ar:'الموضوع' }, type:'text' },
+                    { k:'name',    label:{ en:'Full Name', ar:'الاسم الكامل' },          type:'text',  req:true },
+                    { k:'email',   label:{ en:'Email', ar:'البريد الإلكتروني' },         type:'email', req:true },
+                    { k:'phone',   label:{ en:'Phone', ar:'الهاتف' },                    type:'tel' },
+                    { k:'subject', label:{ en:'Subject', ar:'الموضوع' },                 type:'text' },
                   ].map(f => (
                     <div key={f.k}>
                       <label className="block text-xs font-semibold text-slate-500 mb-1.5">{pick(f.label)}</label>
@@ -117,7 +109,7 @@ export default function Contact() {
               </form>
             </>
           )}
-        </motion.div>
+        </div>
       </div>
     </div>
   )
