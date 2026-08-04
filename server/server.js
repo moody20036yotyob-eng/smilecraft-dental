@@ -45,7 +45,10 @@ const allowedOrigins = isProd
 
 app.use(cors({
   origin: (origin, cb) => {
-    if (!origin || allowedOrigins.includes(origin)) return cb(null, true)
+    // No origin = same-origin request or non-browser (always allow)
+    if (!origin) return cb(null, true)
+    // If no allowedOrigins configured, allow all (e.g. Vercel same-domain)
+    if (!allowedOrigins.length || allowedOrigins.includes(origin)) return cb(null, true)
     cb(new Error('Not allowed by CORS'))
   },
   credentials: true,
@@ -97,5 +100,10 @@ app.use((err, _req, res, _next) => {
   res.status(status).json({ error: err.message || 'Internal server error' })
 })
 
-const PORT = process.env.PORT || 4001
-app.listen(PORT, () => console.log(`SmileCraft server running on port ${PORT} [${process.env.NODE_ENV || 'development'}]`))
+// Start server only when run directly (not when required by Vercel serverless)
+if (require.main === module) {
+  const PORT = process.env.PORT || 4001
+  app.listen(PORT, () => console.log(`SmileCraft server on port ${PORT} [${process.env.NODE_ENV || 'development'}]`))
+}
+
+module.exports = app
